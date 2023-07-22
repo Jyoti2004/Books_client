@@ -34,6 +34,7 @@ function ShowBookDetails() {
           Show Book List
         </button>
       </Link>
+      <img src={book.imgURL} className="w-32"/>
 
       <h3 className="text-5xl font-bold text-white">Book's Info</h3>
       <hr/>
@@ -43,36 +44,36 @@ function ShowBookDetails() {
 
 
       <div>
-       <div className="flex  justify-between p-3 px-4 bg-[#212529] gap-52 text-white hover:bg-[#323539] border-b-2 ">
-        <h1 className="w-32">1</h1>
-        <h1 className="w-32">Title</h1>
-        <h1 className="w-32">{book.title}</h1>
+       <div className="flex  justify-between p-3 px-4 bg-[#212529] lg:gap-52 md:gap-12 text-white hover:bg-[#323539] border-b-2 ">
+        <h1 className="lg:w-32">1</h1>
+        <h1 className="lg:w-32">Title</h1>
+        <h1 className="lg:w-32">{book.title}</h1>
        </div>
 
 
-       <div className="flex  justify-between p-3 px-4 bg-[#212529] gap-72 w-full text-white hover:bg-[#323539] border-b-2 "><h1 className="w-32">2</h1>
-       <h1 className="w-32">ISBN</h1>
-       <h1 className="w-32">{book.isbn}</h1></div>
+       <div className="flex  justify-between p-3 px-4 bg-[#212529] lg:gap-72 w-full text-white hover:bg-[#323539] border-b-2 "><h1 className="lg:w-32">2</h1>
+       <h1 className="lg:w-32">ISBN</h1>
+       <h1 className="lg:w-32">{book.isbn}</h1></div>
        
        
-       <div className="flex justify-between  p-3 px-4 bg-[#212529] gap-72 w-full text-white hover:bg-[#323539] border-b-2 "><h1 className="w-32">3</h1>
-       <h1 className="w-32">Author</h1>
-       <h1 className="w-32">{book.author}</h1></div>
+       <div className="flex justify-between  p-3 px-4 bg-[#212529] lg:gap-72 w-full text-white hover:bg-[#323539] border-b-2 "><h1 className="lg:w-32">3</h1>
+       <h1 className="lg:w-32">Author</h1>
+       <h1 className="lg:w-32">{book.author}</h1></div>
+     
        
-       
-       <div className="flex justify-between  p-3 px-4 bg-[#212529] gap-72 w-full text-white hover:bg-[#323539] border-b-2 "><h1 className="w-32">4</h1>
-       <h1 className="w-32">Publisher</h1>
-       <h1 className="w-32">{book.publisher}</h1></div>
+       <div className="flex justify-between  p-3 px-4 bg-[#212529] lg:gap-72 w-full text-white hover:bg-[#323539] border-b-2 "><h1 className="lg:w-32">4</h1>
+       <h1 className="lg:w-32">Publisher</h1>
+       <h1 className="lg:w-32">{book.publisher}</h1></div>
       
       
-       <div className="flex  justify-between p-3 px-4 bg-[#212529] gap-72 w-full text-white hover:bg-[#323539] border-b-2 "><h1 className="w-32">5</h1>
-       <h1 className="w-32">Published Date</h1>
-       <h1 className="w-32">{dayjs(book.published_Date).format("DD/MM/YYYY")}</h1></div>
+       <div className="flex  justify-between p-3 px-4 bg-[#212529] lg:gap-72 w-full text-white hover:bg-[#323539] border-b-2 "><h1 className="lg:w-32">5</h1>
+       <h1 className="lg:w-32">Published Date</h1>
+       <h1 className="lg:w-32">{dayjs(book.published_Date).format("DD/MM/YYYY")}</h1></div>
        
        
-       <div className="flex justify-between  p-3 px-4 bg-[#212529] gap-72 w-full text-white hover:bg-[#323539] border-b-2 "><h1 className="w-32">6</h1>
-       <h1 className="w-32"> Buy Now</h1>
-       <a  className="w-32" href={book.whereToBuy} rel="moreferrer" target="_blank"> Buy It Here</a></div>
+       <div className="flex justify-between  p-3 px-4 bg-[#212529] lg:gap-72 w-full text-white hover:bg-[#323539] border-b-2 "><h1 className="lg:w-32">6</h1>
+       <h1 className="lg:w-32"> Buy Now</h1>
+       <a  className="lg:w-32" href={book.whereToBuy} rel="moreferrer" target="_blank"> Buy It Here</a></div>
        
 
       </div>

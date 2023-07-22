@@ -55,7 +55,7 @@ navigate("/");
         </button>
       </Link>
 
-      <form onSubmit= {onSubmit} className="flex flex-col gap-7 p-2 w-[600px]">
+      <form onSubmit= {onSubmit} className="flex flex-col gap-7 p-2 lg:w-[600px]">
         <div className="flex gap-3 w-full justify-between"> 
           <input name="title" onChange={onChange} className="p-2 bg- rounded-md outline-none border-2 border-transparent focus:border-[#FFC107] w-full"
             required
